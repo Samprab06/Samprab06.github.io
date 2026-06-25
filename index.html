@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samridh Prabhakar | Computer Engineering @ Purdue</title>
+  <meta name="description" content="Personal portfolio of Samridh Prabhakar, Computer Engineering student at Purdue University specializing in embedded systems, semiconductor fabrication, and hardware-software integration.">
+  <meta name="theme-color" content="#0B0F19">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Exposure Overlay (Signature Animation) ===== -->
+  <div class="exposure-overlay" aria-hidden="true"></div>
+
+  <!-- ===== Fixed Header (Desktop) ===== -->
+  <header class="site-header">
+    <nav class="header-links" aria-label="Contact and social links">
+      <a href="mailto:prabhakarsamridh@gmail.com" aria-label="Send email">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/samridh-prabhakar/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+      </a>
+      <a href="https://github.com/Samprab06" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+      </a>
+      <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-link">Resume</a>
+    </nav>
+  </header>
+
+  <!-- ===== Mobile FAB & Nav ===== -->
+  <button class="mobile-fab" aria-label="Open contact menu" aria-expanded="false">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><line x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </button>
+
+  <nav class="mobile-nav" aria-label="Mobile contact links">
+    <a href="mailto:prabhakarsamridh@gmail.com">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      Email
+    </a>
+    <a href="https://www.linkedin.com/in/samridh-prabhakar/" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+      LinkedIn
+    </a>
+    <a href="https://github.com/Samprab06" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+      GitHub
+    </a>
+    <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h5v7h7v9H6z"/></svg>
+      Resume
+    </a>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-name">Samridh Prabhakar</h1>
+        <p class="hero-title">Computer Engineering @ Purdue University</p>
+        <p class="hero-subtitle">Embedded Systems &amp; Semiconductors</p>
+        <p class="hero-intro">CompE @ Purdue working with semiconductors and embedded systems.</p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">Look at My Work</a>
+          <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h5v7h7v9H6z"/></svg>
+            Resume
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <img src="assets/photo.jpg" alt="Samridh Prabhakar examining a semiconductor wafer" class="hero-img">
+          <div class="photo-placeholder" aria-label="Photo placeholder">SP</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience Timeline ===== -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <!-- Entry 1: Active -->
+        <div class="timeline-item" data-status="active">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Undergraduate Process Engineer</h3>
+              <span class="timeline-date">Jan 2026 - Present</span>
+            </div>
+            <p class="timeline-org">Purdue VIP, Semiconductors @ Birck · West Lafayette, IN</p>
+            <p class="timeline-desc">Fabricating metal-insulator-metal capacitors in a cleanroom environment, executing photolithography process steps and applying statistical process control to maintain fabrication stability.</p>
+          </div>
+        </div>
+
+        <!-- Entry 2: Past (updated) -->
+        <div class="timeline-item" data-status="past">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Research Assistant</h3>
+              <span class="timeline-date">Oct - Dec 2025</span>
+            </div>
+            <p class="timeline-org">MMH Labs, Purdue University · West Lafayette, IN</p>
+            <p class="timeline-desc">Integrated flash memory with a Nordic nRF52-based board for embedded data storage, developing and testing SPI communication protocols and firmware for reliable device operation.</p>
+          </div>
+        </div>
+
+        <!-- Entry 3: Past -->
+        <div class="timeline-item" data-status="past">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Student Researcher</h3>
+              <span class="timeline-date">Aug - Dec 2025</span>
+            </div>
+            <p class="timeline-org">Purdue VIP, Virtual Twins @ Birck · West Lafayette, IN</p>
+            <p class="timeline-desc">Designed semiconductor equipment as virtual twin models for Apple Vision Pro visualization, performing motion analysis and validation through Dassault Systèmes CATIA.</p>
+          </div>
+        </div>
+
+        <!-- Entry 4: Past -->
+        <div class="timeline-item" data-status="past">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Research Intern</h3>
+              <span class="timeline-date">Apr 2023 - Jan 2024</span>
+            </div>
+            <p class="timeline-org">University of Delhi · Delhi, India</p>
+            <p class="timeline-desc">Conducted specification-based testing of silicon microstrip sensors for the CERN CMS Phase-II Upgrade, performing electrical characterization including leakage current and capacitance measurements.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+
+      <!-- Completed Projects -->
+      <div class="projects-group">
+        <h3 class="projects-label">Completed</h3>
+        <div class="projects-grid">
+
+          <!-- TidalGate, Hackathon Winner -->
+          <div class="project-card project-card-has-img" data-status="completed">
+            <span class="project-badge">🏆 DataHacks '26</span>
+            <img src="assets/tidalgate.jpg" alt="TidalGate telemetry buoy" class="project-img" loading="lazy">
+            <div class="project-title-bar"><span>TidalGate</span></div>
+            <div class="project-overlay">
+              <h4 class="project-name">TidalGate: Predictive Tidal Energy</h4>
+              <div class="project-tags">
+                <span class="tag">Arduino Uno Q</span>
+                <span class="tag">Python</span>
+              </div>
+              <p class="project-desc">TidalGate is a buoy that measures wave energy before it hits a turbine. This data helps turbines adjust ahead of time to capture more power and prevent mechanical damage.</p>
+              <div class="project-links">
+                <a href="https://github.com/EkagraAgarwal/TidalGate" target="_blank" rel="noopener noreferrer" class="project-github" aria-label="View TidalGate on GitHub">
+                  <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+                  GitHub
+                </a>
+                <a href="https://devpost.com/software/tidalgate" target="_blank" rel="noopener noreferrer" class="project-github" aria-label="View TidalGate on Devpost">
+                  <svg viewBox="0 0 24 24"><path d="M6.002 1.61L0 12.004L6.002 22.39h11.996L24 12.004L17.998 1.61H6.002zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31c0 4.436-3.21 6.302-6.456 6.302H7.595V5.694zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861c.009-2.569-1.096-3.853-3.767-3.853h-1.336z"/></svg>
+                  Devpost
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded Tetris -->
+          <div class="project-card" data-status="completed">
+            <div class="project-face">
+              <h4 class="project-face-name">Embedded Tetris System</h4>
+              <div class="project-tags">
+                <span class="tag">C++</span>
+                <span class="tag">ESP32</span>
+                <span class="tag">SPI</span>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <h4 class="project-name">Embedded Tetris System</h4>
+              <div class="project-tags">
+                <span class="tag">C++</span>
+                <span class="tag">ESP32</span>
+                <span class="tag">SPI</span>
+              </div>
+              <p class="project-desc">Handheld ESP32-based gaming device with real-time Tetris rendering on an SPI-driven display, built with optimized memory usage for responsive gameplay.</p>
+              <a href="https://github.com/Samprab06" target="_blank" rel="noopener noreferrer" class="project-github" aria-label="View Tetris project on GitHub">
+                <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Navigation Tool -->
+          <div class="project-card" data-status="completed">
+            <div class="project-face">
+              <h4 class="project-face-name">Location-Based Navigation Tool</h4>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Raspberry Pi</span>
+                <span class="tag">Google Maps API</span>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <h4 class="project-name">Location-Based Navigation Tool</h4>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Raspberry Pi</span>
+                <span class="tag">Google Maps API</span>
+              </div>
+              <p class="project-desc">Portable navigation device using real-time GPS and compass heading with OLED display output and Wi-Fi geolocation fallback. Inspired from <a href="https://www.youtube.com/watch?v=QEPN5_rM6b0" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: var(--accent);">https://www.youtube.com/watch?v=QEPN5_rM6b0</a></p>
+              <a href="https://github.com/Samprab06" target="_blank" rel="noopener noreferrer" class="project-github" aria-label="View Navigation project on GitHub">
+                <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- KDE Custom Touchpad Drivers -->
+          <div class="project-card" data-status="completed">
+            <div class="project-face">
+              <h4 class="project-face-name">KDE Custom Touchpad Drivers</h4>
+              <div class="project-tags">
+                <span class="tag">Linux</span>
+                <span class="tag">KDE Plasma 6</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <h4 class="project-name">KDE Custom Touchpad Drivers</h4>
+              <div class="project-tags">
+                <span class="tag">Linux</span>
+                <span class="tag">KDE Plasma 6</span>
+                <span class="tag">Python</span>
+              </div>
+              <p class="project-desc">Custom KDE Plasma 6 touchpad gesture daemon with velocity-scaled volume, media controls, and settle-timer false-click prevention. Made to fix the non-existent multitouch gestures on Linux with precision touchpads.</p>
+              <a href="https://github.com/Samprab06/kde-custom-touchpad-drivers" target="_blank" rel="noopener noreferrer" class="project-github" aria-label="View KDE Touchpad project on GitHub">
+                <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- In Progress Projects -->
+      <div class="projects-group">
+        <h3 class="projects-label">In Progress</h3>
+        <div class="projects-grid">
+
+          <!-- ESP32Slim -->
+          <div class="project-card" data-status="in-progress">
+            <div class="project-face">
+              <h4 class="project-face-name">ESP32Slim Audio Dev Board</h4>
+              <div class="project-tags">
+                <span class="tag">ESP32-S3</span>
+                <span class="tag">PCB Design</span>
+                <span class="tag">KiCad</span>
+                <span class="tag">I2S</span>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <h4 class="project-name">ESP32Slim: Breadboard Audio Platform</h4>
+              <div class="project-tags">
+                <span class="tag">ESP32-S3</span>
+                <span class="tag">PCB Design</span>
+                <span class="tag">KiCad</span>
+                <span class="tag">I2S</span>
+              </div>
+              <p class="project-desc">High-density breadboard-friendly audio dev board with PCM5102A I2S DAC, USB OTG power path with P-MOSFET matrix, LiPo charging, Qwiic I2C expansion, and TXS0108E level shifting. Designed for single-sided SMT assembly.</p>
+            </div>
+          </div>
+
+          <!-- 74HC ALU -->
+          <div class="project-card" data-status="in-progress">
+            <div class="project-face">
+              <h4 class="project-face-name">74-Series 4-Bit ALU</h4>
+              <div class="project-tags">
+                <span class="tag">74-Series ICs</span>
+                <span class="tag">Arduino</span>
+                <span class="tag">Digital Logic</span>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <h4 class="project-name">74HC-Based 4-Bit Hexadecimal Calculator</h4>
+              <div class="project-tags">
+                <span class="tag">74-Series ICs</span>
+                <span class="tag">Arduino</span>
+                <span class="tag">Digital Logic</span>
+              </div>
+              <p class="project-desc">Hybrid hex calculator pairing an Arduino Nano front-end with a fully discrete 74-series hardware ALU. Addition, two's complement subtraction, AND, OR, and XOR through physical ICs with multiplexed BCD-to-7-segment display output.</p>
+              <a href="https://github.com/Samprab06/74-series-based-4-bit-alu" target="_blank" rel="noopener noreferrer" class="project-github" aria-label="View ALU project on GitHub">
+                <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Placeholders -->
+          <div class="project-card project-placeholder"><span class="placeholder-text">Coming Soon</span></div>
+          <div class="project-card project-placeholder"><span class="placeholder-text">Coming Soon</span></div>
+          <div class="project-card project-placeholder"><span class="placeholder-text">Coming Soon</span></div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+
+        <h2 class="footer-heading">Get in Touch</h2>
+
+        <div class="footer-contact-buttons">
+          <a href="mailto:prabhakarsamridh@gmail.com" class="btn btn-secondary contact-btn" aria-label="Send email">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Email
+          </a>
+          <a href="https://www.linkedin.com/in/samridh-prabhakar/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary contact-btn" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/Samprab06" target="_blank" rel="noopener noreferrer" class="btn btn-secondary contact-btn" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+            GitHub
+          </a>
+          <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary contact-btn" aria-label="Download resume">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h5v7h7v9H6z"/></svg>
+            Resume
+          </a>
+        </div>
+
+        <p class="footer-copy">&copy; 2026 Samridh Prabhakar</p>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- ===== Project Detail Modal (Sub-Window) ===== -->
+  <div id="project-modal" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-back-btn" aria-label="Go back to projects">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Back
+      </button>
+      <div class="modal-body">
+        <!-- Project details will be dynamically injected here -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
