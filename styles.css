@@ -546,6 +546,17 @@ ul, ol { list-style: none; }
   padding: var(--section-pad-y) 0;
 }
 
+
+.projects-hint {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
 .projects-group {
   margin-bottom: 3rem;
 }
@@ -1051,6 +1062,13 @@ ul, ol { list-style: none; }
 }
 
 /* Modal Body Content */
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
 .modal-body .project-name {
   font-family: var(--font-display);
   font-size: 1.5rem;
@@ -1079,7 +1097,17 @@ ul, ol { list-style: none; }
   margin-bottom: 1.5rem;
 }
 
-.modal-body .project-links,
+/* Modal Links Wrapper */
+.modal-body .project-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+/* Modal Link Buttons */
 .modal-body .project-github {
   display: inline-flex;
   align-items: center;
@@ -1094,21 +1122,20 @@ ul, ol { list-style: none; }
   transition: border-color 0.25s ease, color 0.25s ease, background 0.25s ease;
 }
 
-.modal-body .project-links a,
-.modal-body .project-github {
-  margin-right: 0.5rem;
-}
-
-.modal-body .project-links a:hover,
 .modal-body .project-github:hover {
   border-color: var(--accent);
   color: var(--accent);
   background: rgba(232, 150, 10, 0.04);
 }
 
-.modal-body .project-links svg,
 .modal-body .project-github svg {
   width: 18px;
   height: 18px;
   fill: currentColor;
+}
+
+/* Center single link button if placed directly inside modal-body */
+.modal-body > .project-github {
+  margin-top: 1.5rem;
+  align-self: center;
 }
