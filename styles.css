@@ -866,7 +866,10 @@ ul, ol { list-style: none; }
   }
 
   .hero-photo {
-    display: none;
+    display: block;
+    order: -1;
+    width: clamp(160px, 50vw, 220px);
+    margin: 0 auto;
   }
 
   .hero-content {
