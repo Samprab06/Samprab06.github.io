@@ -696,7 +696,7 @@ ul, ol { list-style: none; }
 .project-card-has-img .project-img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
   transition: transform 0.4s ease;
 }
@@ -1149,19 +1149,23 @@ ul, ol { list-style: none; }
 .modal-gallery-viewer {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   margin-bottom: 0.75rem;
-  background: #000;
+  background: var(--surface-hover);
   touch-action: pan-y;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-gallery-main {
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-height: 70vh;
   object-fit: contain;
+  display: block;
 }
 
 .modal-gallery-thumbs {
