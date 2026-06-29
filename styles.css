@@ -696,8 +696,8 @@ ul, ol { list-style: none; }
 .project-card-has-img .project-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: bottom;
+  object-fit: contain;
+  object-position: center;
   transition: transform 0.4s ease;
 }
 
@@ -1161,7 +1161,7 @@ ul, ol { list-style: none; }
 .modal-gallery-main {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .modal-gallery-thumbs {
