@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-63FV56HQY1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-63FV56HQY1');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Samridh Prabhakar | Computer Engineering @ Purdue</title>
@@ -66,7 +74,7 @@
         <h1 class="hero-name">Samridh Prabhakar</h1>
         <p class="hero-title">Computer Engineering @ Purdue University</p>
         <p class="hero-subtitle">Embedded Systems &amp; Semiconductors</p>
-        <p class="hero-intro">CompE @ Purdue working with semiconductors and embedded systems.</p>
+        <p class="hero-intro">My name is Samridh Prabhakar, I am a Computer Engineering student at Purdue University. I am currently pursuing my bachelor's degree in ECE with a Concentration and Certificate in Semiconductors and Microelectronics. I am also a Student Researcher at Birck Nanotechnology Center at Purdue where I research the future of Semiconductor Manufacturing!</p>
         <div class="hero-ctas">
           <a href="#projects" class="btn btn-primary">Look at My Work</a>
           <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
@@ -95,7 +103,7 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-header">
-              <h3 class="timeline-role">Undergraduate Process Engineer</h3>
+              <h3 class="timeline-role">Undergraduate Researcher</h3>
               <span class="timeline-date">Jan 2026 - Present</span>
             </div>
             <p class="timeline-org">Purdue VIP, Semiconductors @ Birck · West Lafayette, IN</p>
@@ -103,18 +111,7 @@
           </div>
         </div>
 
-        <!-- Entry 2: Past (updated) -->
-        <div class="timeline-item" data-status="past">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3 class="timeline-role">Research Assistant</h3>
-              <span class="timeline-date">Oct - Dec 2025</span>
-            </div>
-            <p class="timeline-org">MMH Labs, Purdue University · West Lafayette, IN</p>
-            <p class="timeline-desc">Integrated flash memory with a Nordic nRF52-based board for embedded data storage, developing and testing SPI communication protocols and firmware for reliable device operation.</p>
-          </div>
-        </div>
+
 
         <!-- Entry 3: Past -->
         <div class="timeline-item" data-status="past">
@@ -158,7 +155,7 @@
         <div class="projects-grid">
 
           <!-- TidalGate, Hackathon Winner -->
-          <div class="project-card project-card-has-img" data-status="completed">
+          <div class="project-card project-card-has-img" data-status="completed" data-gallery="assets/tidalgate.jpg,assets/gallery.jpg">
             <span class="project-badge">🏆 DataHacks '26</span>
             <img src="assets/tidalgate.jpg" alt="TidalGate telemetry buoy" class="project-img" loading="lazy">
             <div class="project-title-bar"><span>TidalGate</span></div>
@@ -183,15 +180,9 @@
           </div>
 
           <!-- Embedded Tetris -->
-          <div class="project-card" data-status="completed">
-            <div class="project-face">
-              <h4 class="project-face-name">Embedded Tetris System</h4>
-              <div class="project-tags">
-                <span class="tag">C++</span>
-                <span class="tag">ESP32</span>
-                <span class="tag">SPI</span>
-              </div>
-            </div>
+          <div class="project-card project-card-has-img" data-status="completed" data-gallery="assets/tetris.png,assets/tetris schematic.png">
+            <img src="assets/tetris.png" alt="Embedded Tetris" class="project-img" loading="lazy">
+            <div class="project-title-bar"><span>Embedded Tetris System</span></div>
             <div class="project-overlay">
               <h4 class="project-name">Embedded Tetris System</h4>
               <div class="project-tags">
@@ -199,8 +190,8 @@
                 <span class="tag">ESP32</span>
                 <span class="tag">SPI</span>
               </div>
-              <p class="project-desc">Handheld ESP32-based gaming device with real-time Tetris rendering on an SPI-driven display, built with optimized memory usage for responsive gameplay.</p>
-              <a href="https://github.com/Samprab06" target="_blank" rel="noopener noreferrer" class="project-github" aria-label="View Tetris project on GitHub">
+              <p class="project-desc">Handheld ESP32-based gaming device with real-time Tetris rendering on an SPI-driven display. Integrated a heuristic piece ranking engine to dynamically select the worst possible next piece for the player, adapting the difficulty in real time.</p>
+              <a href="https://github.com/MahdiHu06/ESAP_Tetris" target="_blank" rel="noopener noreferrer" class="project-github" aria-label="View Tetris project on GitHub">
                 <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
                 View on GitHub
               </a>
@@ -208,15 +199,9 @@
           </div>
 
           <!-- Navigation Tool -->
-          <div class="project-card" data-status="completed">
-            <div class="project-face">
-              <h4 class="project-face-name">Location-Based Navigation Tool</h4>
-              <div class="project-tags">
-                <span class="tag">Python</span>
-                <span class="tag">Raspberry Pi</span>
-                <span class="tag">Google Maps API</span>
-              </div>
-            </div>
+          <div class="project-card project-card-has-img" data-status="completed" data-gallery="assets/ACF8A0B4-31F5-46AF-B4B8-E39C03B8EA1F.jpg">
+            <img src="assets/ACF8A0B4-31F5-46AF-B4B8-E39C03B8EA1F.jpg" alt="Location-Based Navigation Tool" class="project-img" loading="lazy">
+            <div class="project-title-bar"><span>Location-Based Navigation Tool</span></div>
             <div class="project-overlay">
               <h4 class="project-name">Location-Based Navigation Tool</h4>
               <div class="project-tags">
@@ -258,7 +243,7 @@
           </div>
 
           <!-- Electronic Dice -->
-          <div class="project-card project-card-has-img" data-status="completed">
+          <div class="project-card project-card-has-img" data-status="completed" data-gallery="assets/dice.jpg,assets/IMG_9585.MOV">
             <img src="assets/dice.jpg" alt="Electronic Dice" class="project-img" loading="lazy">
             <div class="project-title-bar"><span>Electronic Dice</span></div>
             <div class="project-overlay">
@@ -269,6 +254,26 @@
                 <span class="tag">Digital Logic</span>
               </div>
               <p class="project-desc">A digital electronic dice circuit that uses a 555 timer configured as an astable multivibrator to clock a CD4017 decade counter, illuminating LEDs in a random dice face sequence upon button release.</p>
+            </div>
+          </div>
+
+          <!-- ECE 20007 Audio Equalizer -->
+          <div class="project-card project-card-has-img" data-status="completed" data-gallery="assets/audio amp.png">
+            <img src="assets/audio amp.png" alt="Analog Audio Equalizer" class="project-img" loading="lazy">
+            <div class="project-title-bar"><span>Analog Audio Equalizer</span></div>
+            <div class="project-overlay">
+              <h4 class="project-name">ECE 20007: Analog Audio Equalizer</h4>
+              <div class="project-tags">
+                <span class="tag">LM324 Op-Amp</span>
+                <span class="tag">LM386 Amp</span>
+                <span class="tag">Active Filters</span>
+                <span class="tag">Analog Circuits</span>
+              </div>
+              <p class="project-desc">Designed and fabricated a 3-band analog audio equalizer (bass, mid, treble) using active RC filters and an LM324 operational amplifier. Features independent band gain control potentiometers and a summing amplifier stage, integrated with an LM386 power amplifier output capable of driving an 8-ohm speaker at 1050mW.</p>
+              <a href="assets/audio%20amplifer%20report.pdf" target="_blank" rel="noopener noreferrer" class="project-github" aria-label="View Equalizer Lab Report PDF">
+                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                Read Lab Report
+              </a>
             </div>
           </div>
 
@@ -328,10 +333,25 @@
             </div>
           </div>
 
-          <!-- Placeholders -->
-          <div class="project-card project-placeholder"><span class="placeholder-text">Coming Soon</span></div>
-          <div class="project-card project-placeholder"><span class="placeholder-text">Coming Soon</span></div>
-          <div class="project-card project-placeholder"><span class="placeholder-text">Coming Soon</span></div>
+          <!-- Keti OS -->
+          <div class="project-card project-card-has-img" data-status="in-progress" data-gallery="assets/keti-main.png">
+            <img src="assets/keti-main.png" alt="Keti OS Screenshot" class="project-img" loading="lazy">
+            <div class="project-title-bar"><span>Keti OS</span></div>
+            <div class="project-overlay">
+              <h4 class="project-name">Keti OS: 32-Bit Operating System</h4>
+              <div class="project-tags">
+                <span class="tag">x86 Assembly</span>
+                <span class="tag">C</span>
+                <span class="tag">Operating Systems</span>
+                <span class="tag">x86 Architecture</span>
+              </div>
+              <p class="project-desc">Keti OS is a 32-bit x86 operating system with an interactive shell, real-time clock, preemptive multitasking, and user mode. Built by <a href="https://github.com/Aadithya-19/Keti-OS" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: var(--accent);">Aadithya Vasudevan</a>, I am contributing by adding new libraries and fixing bugs.</p>
+              <a href="https://github.com/Aadithya-19/Keti-OS" target="_blank" rel="noopener noreferrer" class="project-github" aria-label="View Keti OS on GitHub">
+                <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+                Aadithya's GitHub
+              </a>
+            </div>
+          </div>
 
         </div>
       </div>

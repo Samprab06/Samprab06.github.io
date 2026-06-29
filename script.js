@@ -86,7 +86,7 @@
   // ------------------------------------------------------------------
   // 3. Project Card Mobile Tap Interaction
   // ------------------------------------------------------------------
-    function initProjectCards() {
+        function initProjectCards() {
     const cards = $$('.project-card:not(.project-placeholder)');
     const modal = $('#project-modal');
     if (!modal) return;
@@ -99,8 +99,145 @@
       const overlayContent = $('.project-overlay', card);
       if (!overlayContent) return;
 
-      // Inject content
-      modalBody.innerHTML = overlayContent.innerHTML;
+      // Clear previous modal body contents
+      modalBody.innerHTML = '';
+
+      // Check if there is a gallery
+      const galleryData = card.getAttribute('data-gallery');
+      if (galleryData) {
+        const images = galleryData.split(',');
+        
+        // Create gallery container
+        const galleryContainer = document.createElement('div');
+        galleryContainer.className = 'modal-gallery';
+        
+        // Create viewer container
+        const viewer = document.createElement('div');
+        viewer.className = 'modal-gallery-viewer';
+        
+        const mainImg = document.createElement('img');
+        mainImg.className = 'modal-gallery-main';
+        mainImg.style.display = 'none';
+        
+        const mainVideo = document.createElement('video');
+        mainVideo.className = 'modal-gallery-main';
+        mainVideo.controls = true;
+        mainVideo.playsInline = true;
+        mainVideo.muted = true;
+        mainVideo.style.display = 'none';
+        
+        viewer.appendChild(mainImg);
+        viewer.appendChild(mainVideo);
+        galleryContainer.appendChild(viewer);
+        
+        // Thumbnails row
+        const thumbRow = document.createElement('div');
+        thumbRow.className = 'modal-gallery-thumbs';
+        
+        function switchMedia(src) {
+          const isVideoFile = /\.mp4|\.mov/i.test(src);
+          
+          if (isVideoFile) {
+            mainImg.style.display = 'none';
+            mainVideo.src = src;
+            mainVideo.style.display = 'block';
+            mainVideo.load();
+            mainVideo.play().catch(() => {});
+          } else {
+            mainVideo.pause();
+            mainVideo.style.display = 'none';
+            mainImg.src = src;
+            mainImg.style.display = 'block';
+          }
+          
+          // Update active class on thumbnails
+          $$('.modal-gallery-thumb-wrapper', thumbRow).forEach((t, i) => {
+            t.classList.toggle('active', images[i] === src);
+          });
+        }
+        
+        images.forEach((imgSrc, idx) => {
+          const thumbWrapper = document.createElement('div');
+          thumbWrapper.className = 'modal-gallery-thumb-wrapper' + (idx === 0 ? ' active' : '');
+          
+          const isVideoFile = /\.mp4|\.mov/i.test(imgSrc);
+          
+          if (isVideoFile) {
+            thumbWrapper.innerHTML = `
+              <div class="video-thumb-placeholder">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            `;
+          } else {
+            const thumbImg = document.createElement('img');
+            thumbImg.src = imgSrc;
+            thumbImg.className = 'modal-gallery-thumb-img';
+            thumbWrapper.appendChild(thumbImg);
+          }
+          
+          thumbWrapper.addEventListener('click', () => {
+            switchMedia(imgSrc);
+          });
+          thumbRow.appendChild(thumbWrapper);
+        });
+        
+        galleryContainer.appendChild(thumbRow);
+        modalBody.appendChild(galleryContainer);
+        
+        // Initialize default view
+        switchMedia(images[0]);
+        
+        // Touch events for swiping on the viewer container
+        let touchstartX = 0;
+        let touchendX = 0;
+        
+        function handleGesture() {
+          const threshold = 50;
+          const numImages = images.length;
+          if (numImages <= 1) return;
+          
+          // Get current media src
+          let currentSrc = '';
+          if (mainVideo.style.display === 'block') {
+            currentSrc = mainVideo.getAttribute('src') || '';
+          } else {
+            currentSrc = mainImg.getAttribute('src') || '';
+          }
+          
+          // Check index relative to original list
+          let currentIdx = images.indexOf(currentSrc);
+          if (currentIdx === -1) {
+            currentIdx = images.findIndex(img => currentSrc.endsWith(img));
+          }
+          if (currentIdx === -1) currentIdx = 0;
+          
+          if (touchendX < touchstartX - threshold) {
+            // Swiped left - go to next media
+            const nextIdx = (currentIdx + 1) % numImages;
+            switchMedia(images[nextIdx]);
+          }
+          if (touchendX > touchstartX + threshold) {
+            // Swiped right - go to previous media
+            const prevIdx = (currentIdx - 1 + numImages) % numImages;
+            switchMedia(images[prevIdx]);
+          }
+        }
+        
+        viewer.addEventListener('touchstart', e => {
+          touchstartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        
+        viewer.addEventListener('touchend', e => {
+          touchendX = e.changedTouches[0].screenX;
+          handleGesture();
+        }, { passive: true });
+      }
+
+      // Create a wrapper for overlay content
+      const infoContainer = document.createElement('div');
+      infoContainer.className = 'modal-info';
+      infoContainer.innerHTML = overlayContent.innerHTML;
+      modalBody.appendChild(infoContainer);
 
       // Show modal
       modal.classList.add('open');
@@ -109,6 +246,10 @@
     }
 
     function closeModal() {
+      // Pause any playing videos
+      const video = $('.modal-gallery-main[controls]', modalBody);
+      if (video) video.pause();
+      
       modal.classList.remove('open');
       modal.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = ''; // Restore scrolling
