@@ -574,6 +574,28 @@ ul, ol { list-style: none; }
   padding-left: 0.125rem;
 }
 
+.projects-featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.projects-featured-grid .project-card {
+  aspect-ratio: 16 / 10;
+}
+
+.project-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -838,6 +860,7 @@ ul, ol { list-style: none; }
 
 /* --- 11. Responsive - Tablet --- */
 @media (max-width: 1024px) {
+  .projects-featured-grid,
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -913,6 +936,16 @@ ul, ol { list-style: none; }
   }
 
   /* Projects */
+  .projects-featured-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .projects-featured-grid .project-card {
+    aspect-ratio: 4 / 3;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
