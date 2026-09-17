@@ -62,18 +62,13 @@ Deep dark mode palette inspired by oscilloscope interfaces and cleanroom environ
 - Each entry: role, organization, date range, 1-2 line description
 - Scroll-triggered reveal animation (fade up via IntersectionObserver)
 
-### 7. Project Cards (In Progress & Completed)
+### 7. Project Cards (Completed & In Progress)
 - Projects organized into two clear categories:
-  - **In Progress:** Active systems and research work: TARS Autonomous Mobile Robot, Semiconductor Fabrication & Advanced Packaging, and Keti OS.
   - **Completed:** Tested hardware, embedded systems, drivers, and circuit designs.
+  - **In Progress:** Active systems, physical design, and research work: TARS Autonomous Mobile Robot, Semiconductor Fabrication & Advanced Packaging, FlowGuard, and Keti OS.
 - Cards display project name and tech tags on the face; clicking any card opens the modal overlay with complete technical descriptions, links, and multi-asset galleries.
 
 ### 7b. Project Inventory
-**In Progress:**
-1. **TARS: Autonomous Mobile Robot** - Multidisciplinary engineering & leadership (15-member team, Interstellar-inspired robotics)
-2. **Semiconductor Fabrication & Advanced Packaging** - DRIE TSV development, ALD automation for TMD transistors, cleanroom photolithography & SPC metrology (with research poster link)
-3. **Keti OS** - 32-bit x86 Operating System (contributing libraries & bug fixes)
-
 **Completed:**
 1. **TidalGate: Predictive Tidal Energy** - Telemetry buoy & embedded ML (🏆 DataHacks '26 @ UCSD)
 2. **RP2354 FIDO2 Security Key** - Custom RP2354 PCB & hardware authenticator with integrated FIDO2 firmware
@@ -82,6 +77,12 @@ Deep dark mode palette inspired by oscilloscope interfaces and cleanroom environ
 5. KDE Custom Touchpad Drivers - Plasma 6 gesture daemon for precision Linux touchpads
 6. Electronic Dice - 555 and 4017 IC digital logic circuit
 7. Analog Audio Equalizer - Active 3-band RC filter equalizer with LM324 and LM386 power amp
+
+**In Progress:**
+1. **TARS: Autonomous Mobile Robot** - Multidisciplinary engineering & leadership (15-member team, Interstellar-inspired robotics)
+2. **Semiconductor Fabrication & Advanced Packaging** - DRIE TSV development, ALD automation for TMD transistors, cleanroom photolithography & SPC metrology (with research poster link)
+3. **FlowGuard: AI-Assisted Physical Design Optimizer** - Physical design optimizer for SKY130 / TinyTapeout with 600+ automated runs
+4. **Keti OS** - 32-bit x86 Operating System (contributing libraries & bug fixes)
 
 ### 8. Navigation
 - Minimal fixed header, top-right corner
