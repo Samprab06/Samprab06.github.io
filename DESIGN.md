@@ -62,28 +62,26 @@ Deep dark mode palette inspired by oscilloscope interfaces and cleanroom environ
 - Each entry: role, organization, date range, 1-2 line description
 - Scroll-triggered reveal animation (fade up via IntersectionObserver)
 
-### 7. Project Cards (v3 - Featured Work & More Projects)
-- Dual-tier project hierarchy designed for rapid recruiter evaluation:
-  - **Featured Work:** Top 2x2 grid highlighting the 4 core pillars: Robotics Systems Leadership (TARS), IoT/Embedded ML (TidalGate), Custom Cryptographic Hardware (RP2354 FIDO2), and Cleanroom Processing & Advanced Packaging (Birck Nanotechnology Center).
-  - **More Projects:** 3-column catalog of embedded, Linux driver, analog audio, and operating systems projects.
-- Cards show project name + tags on the face; clicking any card opens the modal overlay with complete technical descriptions, links, and multi-asset galleries.
+### 7. Project Cards (In Progress & Completed)
+- Projects organized into two clear categories:
+  - **In Progress:** Active systems and research work: TARS Autonomous Mobile Robot, Semiconductor Fabrication & Advanced Packaging, and Keti OS.
+  - **Completed:** Tested hardware, embedded systems, drivers, and circuit designs.
+- Cards display project name and tech tags on the face; clicking any card opens the modal overlay with complete technical descriptions, links, and multi-asset galleries.
 
 ### 7b. Project Inventory
-**Featured Work:**
+**In Progress:**
 1. **TARS: Autonomous Mobile Robot** - Multidisciplinary engineering & leadership (15-member team, Interstellar-inspired robotics)
-2. **TidalGate: Predictive Tidal Energy** - Telemetry buoy & embedded ML (🏆 DataHacks '26 @ UCSD)
-3. **RP2354 FIDO2 Security Key** - Custom RP2354 PCB & hardware authenticator with integrated FIDO2 firmware
-4. **Semiconductor Fabrication & Advanced Packaging** - DRIE TSV development, ALD automation for TMD transistors, cleanroom photolithography & SPC metrology (with research poster link)
+2. **Semiconductor Fabrication & Advanced Packaging** - DRIE TSV development, ALD automation for TMD transistors, cleanroom photolithography & SPC metrology (with research poster link)
+3. **Keti OS** - 32-bit x86 Operating System (contributing libraries & bug fixes)
 
-**More Projects:**
-1. Embedded Multiplayer Tetris System - ESP32 handheld with dynamic heuristic ranking engine
-2. Location-Based Digital Compass - Raspberry Pi GPS navigator with OLED
-3. KDE Custom Touchpad Drivers - Plasma 6 gesture daemon for precision Linux touchpads
-4. Analog Audio Equalizer - Active 3-band RC filter equalizer with LM324 and LM386 power amp
-5. Electronic Dice - 555 and 4017 IC digital logic circuit
-6. ESP32Slim Dev Board - High-density breadboard development platform with USB OTG
-7. 74-Series 4-Bit ALU - Discrete 74HC logic hexadecimal calculator paired with Arduino
-8. Keti OS - 32-bit x86 Operating System (contributing libraries & bug fixes)
+**Completed:**
+1. **TidalGate: Predictive Tidal Energy** - Telemetry buoy & embedded ML (🏆 DataHacks '26 @ UCSD)
+2. **RP2354 FIDO2 Security Key** - Custom RP2354 PCB & hardware authenticator with integrated FIDO2 firmware
+3. Embedded Multiplayer Tetris System - ESP32 handheld with dynamic heuristic ranking engine
+4. Location-Based Digital Compass - Raspberry Pi GPS navigator with OLED
+5. KDE Custom Touchpad Drivers - Plasma 6 gesture daemon for precision Linux touchpads
+6. Electronic Dice - 555 and 4017 IC digital logic circuit
+7. Analog Audio Equalizer - Active 3-band RC filter equalizer with LM324 and LM386 power amp
 
 ### 8. Navigation
 - Minimal fixed header, top-right corner
@@ -166,21 +164,19 @@ The following content was extracted from the user's LaTeX resume and adapted (no
 4. Student Researcher - Purdue VIP, Virtual Twins @ Birck (Aug - Dec 2025) **[past]**
 5. Research Intern - University of Delhi / CERN (Apr 2023 - Jan 2024) **[past]**
 
-### Featured Projects
+### In Progress Projects
 1. TARS: Autonomous Mobile Robot (Robotics, Systems Architecture, Leadership)
-2. TidalGate: Predictive Tidal Energy (Arduino Uno Q, IMU, Qualcomm ML) - 🏆 DataHacks '26 @ UCSD
-3. RP2354 FIDO2 Security Key (RP2354 Custom Hardware, USB-C, CTAP2)
-4. Semiconductor Fabrication & Advanced Packaging (DRIE TSVs, ALD Automation, Photolithography, SPC Metrology)
+2. Semiconductor Fabrication & Advanced Packaging (DRIE TSVs, ALD Automation, Photolithography, SPC Metrology)
+3. Keti OS (x86 Assembly, C, 32-Bit Kernel development)
 
-### Additional Projects
-1. Embedded Multiplayer Tetris System (C++, ESP32, SPI, ESP-NOW)
-2. Location-Based Digital Compass (Python, Raspberry Pi Zero W, Google Maps APIs)
-3. KDE Custom Touchpad Drivers (Linux, KDE Plasma 6, Python)
-4. Analog Audio Equalizer (LM324 Op-Amp, LM386 Power Amp, Active RC Filters)
-5. Electronic Dice (555 Timer, CD4017 IC, Digital Logic)
-6. ESP32Slim Dev Board (PCB Design, KiCad, USB OTG)
-7. 74-Series 4-Bit ALU (74HC ICs, Arduino, Digital Logic)
-8. Keti OS (x86 Assembly, C, 32-Bit Kernel development)
+### Completed Projects
+1. TidalGate: Predictive Tidal Energy (Arduino Uno Q, IMU, Qualcomm ML) - 🏆 DataHacks '26 @ UCSD
+2. RP2354 FIDO2 Security Key (RP2354 Custom Hardware, USB-C, CTAP2)
+3. Embedded Multiplayer Tetris System (C++, ESP32, SPI, ESP-NOW)
+4. Location-Based Digital Compass (Python, Raspberry Pi Zero W, Google Maps APIs)
+5. KDE Custom Touchpad Drivers (Linux, KDE Plasma 6, Python)
+6. Analog Audio Equalizer (LM324 Op-Amp, LM386 Power Amp, Active RC Filters)
+7. Electronic Dice (555 Timer, CD4017 IC, Digital Logic)
 
 ### Education
 - B.S. Computer Engineering, Purdue University
